@@ -4,7 +4,7 @@ from mrcnn.config import Config
 class PneumoniaConfig(Config):
     NAME = 'Pneumonia'
     GPU_COUNT = 1
-    IMAGES_PER_GPU = 1
+    IMAGES_PER_GPU = 2
     LEARNING_RATE = 0.001
     BACKBONE = "resnet101"
     NUM_CLASSES = 2
@@ -14,7 +14,7 @@ class PneumoniaConfig(Config):
     TRAIN_ROIS_PER_IMAGE = 64
     MAX_GT_INSTANCES = 4
     DETECTION_MAX_INSTANCES = 3
-    DETECTION_MIN_CONFIDENCE = 0.78
+    DETECTION_MIN_CONFIDENCE = 0.95
     DETECTION_NMS_THRESHOLD = 0.01
 
 

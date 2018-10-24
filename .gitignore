@@ -59,3 +59,4 @@ ENV/
 /data_source/
 /data/
 /logs/
+/output/

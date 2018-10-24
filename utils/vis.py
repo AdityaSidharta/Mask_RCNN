@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 def get_ax(rows=1, cols=1, size=16):
     """Return a Matplotlib Axes array to be used in
     all visualizations in the notebook. Provide a

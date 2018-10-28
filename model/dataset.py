@@ -13,8 +13,8 @@ class PneumoniaDataset(Dataset):
         super().__init__(self)
         self.data_dir = data_dir
         self.mode = mode
-        self.img_path = os.path.join(self.data_dir, 'stage_1_{}_images'.format(self.mode))
-        self.train_labels_df = pd.read_csv(os.path.join(self.data_dir, 'stage_1_train_labels.csv'))
+        self.img_path = os.path.join(self.data_dir, 'stage_2_{}_images'.format(self.mode))
+        self.train_labels_df = pd.read_csv(os.path.join(self.data_dir, 'stage_2_train_labels.csv'))
         self.train_labels_dict = self.create_train_labels_dict()
 
         self.add_class('Pneumonia', 1, 'Pneumonia')
